@@ -33,10 +33,15 @@
                 <a href="#gallery" class="nav-link">Gallery</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <a href="#menu" class="nav-cta">Order Now</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="nav-right">
+                <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -44,7 +49,6 @@
     <section id="home" class="hero">
         <div class="hero-grain"></div>
         <div class="hero-content">
-            <div class="hero-badge animate-in">Artisan Bakehouse &middot; Bangalore</div>
             <div class="hero-logo-wrap animate-in">
                 <img src="sojiga-logo.png" alt="Sōjiga — By Chef Anu" class="hero-logo">
             </div>
@@ -60,9 +64,6 @@
                 <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <div class="scroll-line"></div>
         </div>
         <div class="hero-float hero-float-1">&#x2726;</div>
         <div class="hero-float hero-float-2">&#x273B;</div>
@@ -461,7 +462,7 @@
                     <div class="contact-card">
                         <div class="contact-card-icon">&#128241;</div>
                         <h3>WhatsApp</h3>
-                        <p>+91 XXXXX XXXXX<br><a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-direct">Message us directly &rarr;</a></p>
+                        <p>+91 74838 70687<br><a href="https://wa.me/917483870687" class="whatsapp-direct">Message us directly &rarr;</a></p>
                     </div>
                     <div class="contact-social">
                         <a href="https://www.instagram.com/sojiga_bakehouse/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
@@ -559,7 +560,7 @@
                 <div class="footer-social">
                     <h4>Follow Us</h4>
                     <a href="https://www.instagram.com/sojiga_bakehouse/" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+                    <a href="https://wa.me/917483870687" target="_blank" rel="noopener">WhatsApp</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -569,8 +570,97 @@
         </div>
     </footer>
 
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Your Cart</h3>
+            <button class="cart-drawer-close" id="cartDrawerClose" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-drawer-body" id="cartDrawerBody">
+            <div class="cart-empty-state">
+                <div class="cart-empty-icon">&#128722;</div>
+                <p>Your cart is empty</p>
+                <button class="btn btn-secondary btn-sm cart-browse-btn">Browse Menu</button>
+            </div>
+        </div>
+        <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none">
+            <div class="cart-summary-row"><span>Subtotal</span><span id="cartSubtotal">&#8377;0</span></div>
+            <div class="cart-summary-row"><span>Delivery</span><span>&#8377;50</span></div>
+            <div class="cart-summary-row cart-total-row"><span>Total</span><span id="cartTotal">&#8377;0</span></div>
+            <button class="btn btn-primary btn-full" id="cartCheckoutBtn">Checkout</button>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-overlay" id="checkoutOverlay">
+        <div class="checkout-modal" id="checkoutModal">
+            <!-- Step 1: Details -->
+            <div class="checkout-step" id="checkoutStep1">
+                <div class="checkout-header">
+                    <button class="checkout-back" id="checkoutBack1" aria-label="Back">&larr;</button>
+                    <h3>Checkout</h3>
+                    <div class="checkout-secure"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure</div>
+                </div>
+                <div class="checkout-body">
+                    <div class="checkout-order-brief" id="checkoutBrief"></div>
+                    <form id="checkoutForm" class="checkout-form">
+                        <div class="checkout-section-label">Delivery Details</div>
+                        <div class="form-row">
+                            <div class="form-group"><label for="coName">Full Name</label><input type="text" id="coName" required placeholder="Your name"></div>
+                            <div class="form-group"><label for="coPhone">Phone</label><input type="tel" id="coPhone" required placeholder="+91 74838 70687"></div>
+                        </div>
+                        <div class="form-group"><label for="coAddress">Delivery Address</label><textarea id="coAddress" required placeholder="Full address with landmark" rows="2"></textarea></div>
+                        <div class="checkout-section-label">Payment Method</div>
+                        <div class="payment-method-grid">
+                            <label class="payment-method-option">
+                                <input type="radio" name="payMethod" value="upi" checked>
+                                <div class="payment-method-card"><span class="pm-icon upi-icon">UPI</span><span>UPI / GPay / PhonePe</span></div>
+                            </label>
+                            <label class="payment-method-option">
+                                <input type="radio" name="payMethod" value="card">
+                                <div class="payment-method-card"><span class="pm-icon card-icon">&#128179;</span><span>Credit / Debit Card</span></div>
+                            </label>
+                            <label class="payment-method-option">
+                                <input type="radio" name="payMethod" value="cod">
+                                <div class="payment-method-card"><span class="pm-icon cod-icon">&#128181;</span><span>Cash on Delivery</span></div>
+                            </label>
+                        </div>
+                        <!-- Card fields (shown when card selected) -->
+                        <div class="card-fields" id="cardFields" style="display:none">
+                            <div class="form-group"><label for="cardNum">Card Number</label><input type="text" id="cardNum" placeholder="1234 5678 9012 3456" maxlength="19" inputmode="numeric"></div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="cardExp">Expiry</label><input type="text" id="cardExp" placeholder="MM / YY" maxlength="7"></div>
+                                <div class="form-group"><label for="cardCvc">CVC</label><input type="text" id="cardCvc" placeholder="123" maxlength="4" inputmode="numeric"></div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full checkout-pay-btn" id="payBtn">
+                            <span class="pay-btn-text">Place Order</span>
+                            <span class="pay-btn-spinner" style="display:none"></span>
+                        </button>
+                    </form>
+                    <div class="checkout-footer-note">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        Your payment info is secure and encrypted
+                    </div>
+                </div>
+            </div>
+            <!-- Step 2: Confirmation -->
+            <div class="checkout-step" id="checkoutStep2" style="display:none">
+                <div class="checkout-success">
+                    <div class="success-check">&#10003;</div>
+                    <h3>Order Confirmed!</h3>
+                    <p class="success-order-id"></p>
+                    <p class="success-msg">Thank you for your order. We'll send you a confirmation on WhatsApp shortly.</p>
+                    <div class="success-summary" id="successSummary"></div>
+                    <button class="btn btn-primary btn-full" id="successClose">Continue Browsing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/917483870687" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         <span class="whatsapp-tooltip">Chat with us!</span>
     </a>
