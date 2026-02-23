@@ -25,6 +25,7 @@
     --font-heading: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Outfit', -apple-system, sans-serif;
     --font-accent: 'Dancing Script', cursive;
+    --font-numeric: 'Poppins', -apple-system, sans-serif;
 
     --shadow-sm: 0 2px 8px rgba(60,21,24,0.06);
     --shadow-md: 0 4px 20px rgba(60,21,24,0.08);
@@ -341,11 +342,11 @@ ul { list-style: none; }
 }
 .price-group { display: flex; align-items: baseline; gap: 8px; }
 .price {
-    font-family: var(--font-heading); font-size: 20px; font-weight: 600;
+    font-family: var(--font-numeric); font-size: 20px; font-weight: 600;
     color: var(--chocolate);
 }
 .price-original {
-    font-family: var(--font-heading); font-size: 14px; font-weight: 400;
+    font-family: var(--font-numeric); font-size: 14px; font-weight: 400;
     color: var(--warm-gray-light); text-decoration: line-through;
 }
 .price-variant {
@@ -756,7 +757,7 @@ ul { list-style: none; }
 }
 .qty-btn:hover { background: var(--gold); color: white; }
 .order-item-price {
-    font-family: var(--font-heading); font-size: 16px;
+    font-family: var(--font-numeric); font-size: 16px;
     font-weight: 600; color: var(--chocolate);
 }
 .order-total {
@@ -773,7 +774,7 @@ ul { list-style: none; }
     border-top: 1px solid rgba(196,163,90,0.1);
 }
 .order-total-row.total span:last-child {
-    font-family: var(--font-heading); font-size: 22px;
+    font-family: var(--font-numeric); font-size: 22px;
 }
 #checkoutBtn { margin-top: 20px; }
 
@@ -856,6 +857,7 @@ ul { list-style: none; }
     position: absolute; top: -4px; right: -6px;
     min-width: 18px; height: 18px; border-radius: 50%;
     background: var(--terracotta); color: white;
+    font-family: var(--font-numeric);
     font-size: 10px; font-weight: 700;
     display: flex; align-items: center; justify-content: center;
     transition: transform 0.3s ease;
@@ -928,7 +930,7 @@ ul { list-style: none; }
     margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .cart-item-price {
-    font-family: var(--font-heading); font-size: 15px; font-weight: 600;
+    font-family: var(--font-numeric); font-size: 15px; font-weight: 600;
     color: var(--chocolate);
 }
 .cart-item-controls {
@@ -943,6 +945,7 @@ ul { list-style: none; }
 }
 .cart-qty-btn:hover { border-color: var(--gold); color: var(--gold); }
 .cart-qty-num {
+    font-family: var(--font-numeric);
     font-size: 14px; font-weight: 600; color: var(--chocolate);
     min-width: 20px; text-align: center;
 }
@@ -966,7 +969,7 @@ ul { list-style: none; }
     border-top: 1.5px solid rgba(196,163,90,0.15);
 }
 .cart-total-row span:last-child {
-    font-family: var(--font-heading); font-size: 22px;
+    font-family: var(--font-numeric); font-size: 22px;
 }
 .cart-drawer-footer .btn { margin-top: 16px; }
 
@@ -1026,7 +1029,7 @@ ul { list-style: none; }
     margin-top: 8px; border-top: 1px solid rgba(196,163,90,0.1);
     font-size: 16px; font-weight: 600; color: var(--chocolate);
 }
-.brief-total span:last-child { font-family: var(--font-heading); font-size: 18px; }
+.brief-total span:last-child { font-family: var(--font-numeric); font-size: 18px; }
 .checkout-section-label {
     font-size: 12px; font-weight: 600; letter-spacing: 1px;
     text-transform: uppercase; color: var(--warm-gray);
