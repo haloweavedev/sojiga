@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sōjiga Bakehouse | ಸೋಜಿಗ — Artisan Bakes by Chef Anu</title>
+    <meta name="description" content="Sōjiga Bakehouse — Artisan bakes crafted with love by Chef Anu. Where every bite is a wonder.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Dancing+Script:wght@700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <img src="sojiga-logo.png" alt="Sōjiga" class="preloader-logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="sojiga-logo.png" alt="Sōjiga Bakehouse" class="nav-logo-img">
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#whats-new" class="nav-link">What's New</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#menu" class="nav-cta">Order Now</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">Artisan Bakehouse &middot; Bangalore</div>
+            <div class="hero-logo-wrap animate-in">
+                <img src="sojiga-logo.png" alt="Sōjiga — By Chef Anu" class="hero-logo">
+            </div>
+            <h1 class="sr-only">Sōjiga Bakehouse by Chef Anu</h1>
+            <div class="hero-divider animate-in">
+                <span class="divider-line"></span>
+                <span class="divider-ornament">&#x2726;</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="hero-subtitle animate-in">B A K E H O U S E</p>
+            <p class="hero-tagline animate-in">Where Every Bite is a Wonder</p>
+            <div class="hero-actions animate-in">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-float hero-float-1">&#x2726;</div>
+        <div class="hero-float hero-float-2">&#x273B;</div>
+        <div class="hero-float hero-float-3">&#x2726;</div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Our Offerings</span>
+                <h2 class="section-title animate-on-scroll">The Menu</h2>
+                <p class="section-desc animate-on-scroll">Handcrafted with love using 45% couverture chocolate, pure butter &amp; the finest ingredients.</p>
+            </div>
+            <div class="menu-tabs animate-on-scroll">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="cookies">Cookies</button>
+                <button class="menu-tab" data-category="cheesecakes">Cheesecakes</button>
+                <button class="menu-tab" data-category="brownies">Brownies</button>
+                <button class="menu-tab" data-category="teacakes">Tea Cakes</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+
+                <!-- ═══ CHOCO CHUNK COOKIES ═══ -->
+                <div class="menu-card animate-on-scroll" data-category="cookies">
+                    <div class="menu-card-img has-photo">
+                        <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_1202339_1771335868564_b9df9343_37ad_4e52_82ac_7a8324073a1e.jpeg" alt="Chunky Cutie" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Chunky Cutie</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>A New York style jumbo cookie &mdash; 70g, Box of 2</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;300</span><span class="price-original">&#8377;340</span></div>
+                            <button class="add-btn" data-name="Chunky Cutie" data-price="300">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="cookies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#8B6B4A,#5C3D2E,#A08060)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>S'mores Milk Chocolate</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>A New York style jumbo cookie &mdash; 70g Approx</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;300</span><span class="price-original">&#8377;340</span></div>
+                            <button class="add-btn" data-name="S'mores Milk Chocolate" data-price="300">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="cookies">
+                    <div class="menu-card-img has-photo">
+                        <img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_1202341_1771336538599_c66c86da_6202_4cff_966f_38349f2cbe8c.jpeg" alt="White Chocolate Cranberry" loading="lazy">
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>White Chocolate Cranberry</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>Buttery soft cookies with white couverture chocolate chips &amp; cranberry bursts</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;300</span><span class="price-original">&#8377;340</span></div>
+                            <button class="add-btn" data-name="White Chocolate Cranberry" data-price="300">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="cookies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#C4956A,#8B6914,#D4A878)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Biscoff Babe</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>A New York style centre-filled jumbo cookie &mdash; 70g each (pack of 2)</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;300</span><span class="price-original">&#8377;340</span></div>
+                            <button class="add-btn" data-name="Biscoff Babe" data-price="300">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ BAKED CHEESECAKE (EGGLESS) ═══ -->
+                <div class="menu-card animate-on-scroll" data-category="cheesecakes">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#FFF3C4,#E8D5A0,#F5E6B8)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Classic Cheesecake</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>Silky, velvety eggless baked cheesecake on a buttery biscuit crust (No toppings)</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;210</span></div>
+                            <button class="add-btn" data-name="Classic Cheesecake" data-price="210">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="cheesecakes">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#A0A0D8,#6868B0,#C0C0E8)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Blueberry Cheesecake</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>Silky, velvety eggless baked cheesecake on a buttery biscuit crust topped with generous blueberry compote</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;220</span></div>
+                            <button class="add-btn" data-name="Blueberry Cheesecake" data-price="220">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="cheesecakes">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#F5D0C5,#E8A090,#F2C4B5)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Strawberry Cheesecake</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>Silky, velvety eggless baked cheesecake on a buttery biscuit crust, finished with fresh strawberry topping</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;220</span></div>
+                            <button class="add-btn" data-name="Strawberry Cheesecake" data-price="220">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ BROWNIES ═══ -->
+                <div class="menu-card animate-on-scroll" data-category="brownies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#3C1518,#1A0A0C,#5C2A2E)">
+                        <span class="menu-card-badge">Popular</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Fudgy Signature (L)</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>Our signature bestseller &mdash; luxuriously rich, intensely fudgy, made with pure butter &amp; couverture chocolate</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price price-variant">Price on request</span></div>
+                            <button class="add-btn" data-name="Fudgy Signature (L)" data-price="0">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="brownies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#4A2C2A,#2C1810,#6B3A2E)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Eggless Brownies</h3><span class="diet-badge veg" title="Vegetarian"></span></div>
+                        <p>All the indulgence of our signature brownie, beautifully crafted without eggs</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price price-variant">Price on request</span></div>
+                            <button class="add-btn" data-name="Eggless Brownies" data-price="0">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="brownies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#5C3D2E,#3C1518,#7A5240)">
+                        <span class="menu-card-badge">Must Try</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Millet Brownies</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>Deeply indulgent brownie made with nutrient-rich millets &amp; no refined sugar <span class="menu-tag">GF</span> <span class="menu-tag">RSF</span></p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price price-variant">Price on request</span></div>
+                            <button class="add-btn" data-name="Millet Brownies" data-price="0">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-on-scroll" data-category="brownies">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#2C1810,#1A0A0C,#4A2C2A)">
+                        <span class="menu-card-badge">OG</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Fudgy Signature Bites</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>Our signature bestseller in bite-sized form &mdash; luxuriously rich, intensely fudgy</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price price-variant">Price on request</span></div>
+                            <button class="add-btn" data-name="Fudgy Signature Bites" data-price="0">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ TEA CAKES ═══ -->
+                <div class="menu-card animate-on-scroll" data-category="teacakes">
+                    <div class="menu-card-img" style="background:linear-gradient(135deg,#E8B8A0,#C4856A,#F0C8B0)"></div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-head"><h3>Carrot Cupcake</h3><span class="diet-badge egg" title="Contains Egg"></span></div>
+                        <p>Box of 3 &mdash; Soft, spiced carrot cupcakes topped with luscious cream cheese frosting</p>
+                        <div class="menu-card-footer">
+                            <div class="price-group"><span class="price">&#8377;330</span></div>
+                            <button class="add-btn" data-name="Carrot Cupcake" data-price="330">+</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-img-frame">
+                        <div class="about-img-placeholder" style="background:linear-gradient(135deg,#F4D9D0,#C4A35A,#3C1518)"></div>
+                    </div>
+                    <div class="about-img-accent"></div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label animate-on-scroll">Our Story</span>
+                    <h2 class="section-title animate-on-scroll" style="text-align:left">About Sōjiga</h2>
+                    <div class="about-meaning animate-on-scroll">
+                        <span class="meaning-word">Sōjiga (ಸೋಜಿಗ)</span>
+                        <span class="meaning-def">&mdash; Kannada for &ldquo;wonder&rdquo; or &ldquo;amazement&rdquo;</span>
+                    </div>
+                    <p class="about-text animate-on-scroll">Born from a deep love for baking and a desire to create moments of wonder, Sōjiga Bakehouse is the dream of Chef Anu &mdash; a passionate baker who believes that every loaf, every cake, and every pastry should tell a story.</p>
+                    <p class="about-text animate-on-scroll">What started as weekend experiments in a home kitchen has blossomed into an artisan bakehouse that marries traditional Indian flavors with global baking techniques. Each creation at Sōjiga is crafted with premium ingredients, time-honored methods, and an unwavering commitment to quality.</p>
+                    <blockquote class="about-quote animate-on-scroll">
+                        &ldquo;I want people to taste my bakes and feel that sense of sōjiga &mdash; that moment of pure wonder when something simple becomes extraordinary.&rdquo;
+                        <cite>&mdash; Chef Anu, Founder</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="philosophy-grid">
+                <div class="philosophy-card animate-on-scroll">
+                    <div class="philosophy-icon">&#127806;</div>
+                    <h3>Premium Ingredients</h3>
+                    <p>We source the finest flours, real butter, Belgian chocolate, and seasonal produce.</p>
+                </div>
+                <div class="philosophy-card animate-on-scroll">
+                    <div class="philosophy-icon">&#129330;</div>
+                    <h3>Handcrafted with Love</h3>
+                    <p>Every item is made by hand in small batches. No shortcuts, no preservatives.</p>
+                </div>
+                <div class="philosophy-card animate-on-scroll">
+                    <div class="philosophy-icon">&#10024;</div>
+                    <h3>Tradition Meets Innovation</h3>
+                    <p>From classic sourdough to cardamom rose rolls, we honor traditions with creative twists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New Section -->
+    <section id="whats-new" class="section whatsnew-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Stay Updated</span>
+                <h2 class="section-title animate-on-scroll">What's New</h2>
+                <p class="section-desc animate-on-scroll">Fresh from our kitchen &mdash; discover our latest creations, upcoming events, and seasonal specials.</p>
+            </div>
+            <div class="whatsnew-grid">
+                <div class="whatsnew-card whatsnew-featured animate-on-scroll">
+                    <div class="whatsnew-card-img" style="background:linear-gradient(135deg,#C84B31,#8B2500,#E07050)">
+                        <span class="whatsnew-badge new">New Launch</span>
+                    </div>
+                    <div class="whatsnew-card-body">
+                        <span class="whatsnew-date">February 2026</span>
+                        <h3>Strawberry Season Collection</h3>
+                        <p>Fresh strawberry shortcake, strawberry Danish, and our new strawberry basil sourdough &mdash; available for a limited time.</p>
+                        <a href="#contact" class="whatsnew-link">Pre-order now &rarr;</a>
+                    </div>
+                </div>
+                <div class="whatsnew-card animate-on-scroll">
+                    <div class="whatsnew-card-img" style="background:linear-gradient(135deg,#D4A35A,#8B7530,#E8C878)">
+                        <span class="whatsnew-badge upcoming">Coming Soon</span>
+                    </div>
+                    <div class="whatsnew-card-body">
+                        <span class="whatsnew-date">March 2026</span>
+                        <h3>Baking Workshop: Sourdough 101</h3>
+                        <p>Learn the art of sourdough from scratch. Includes starter kit, hands-on baking, and a take-home loaf.</p>
+                        <a href="#contact" class="whatsnew-link">Register interest &rarr;</a>
+                    </div>
+                </div>
+                <div class="whatsnew-card animate-on-scroll">
+                    <div class="whatsnew-card-img" style="background:linear-gradient(135deg,#F4D9D0,#C4856A,#E8B8A0)">
+                        <span class="whatsnew-badge limited">Limited Edition</span>
+                    </div>
+                    <div class="whatsnew-card-body">
+                        <span class="whatsnew-date">Weekends Only</span>
+                        <h3>Weekend Brunch Boxes</h3>
+                        <p>Curated boxes with fresh croissants, artisan bread, seasonal jam, and a surprise pastry.</p>
+                        <a href="#contact" class="whatsnew-link">Order yours &rarr;</a>
+                    </div>
+                </div>
+                <div class="whatsnew-card animate-on-scroll">
+                    <div class="whatsnew-card-img" style="background:linear-gradient(135deg,#5C3D2E,#3C1518,#8B5E4B)">
+                        <span class="whatsnew-badge upcoming">Coming Soon</span>
+                    </div>
+                    <div class="whatsnew-card-body">
+                        <span class="whatsnew-date">April 2026</span>
+                        <h3>Pop-Up at Farmer's Market</h3>
+                        <p>Catch us with freshly baked goods, coffee pairings, and exclusive market-only specials.</p>
+                        <a href="#contact" class="whatsnew-link">Stay updated &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Visual Feast</span>
+                <h2 class="section-title animate-on-scroll">Gallery</h2>
+                <p class="section-desc animate-on-scroll">A glimpse into our kitchen and the creations that make Sōjiga special.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-tall animate-on-scroll" data-caption="Choco Chunk Cookies">
+                    <div class="gallery-img has-photo"><img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_1202338_1768299149676_25A466C9_2931_41B0_AEE7_BA8951BD18CC.jpeg" alt="Choco Chunk Cookies" loading="lazy"></div>
+                    <div class="gallery-overlay"><span>Choco Chunk Cookies</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Chunky Cutie Cookie">
+                    <div class="gallery-img has-photo"><img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_1202339_1771335868564_b9df9343_37ad_4e52_82ac_7a8324073a1e.jpeg" alt="Chunky Cutie" loading="lazy"></div>
+                    <div class="gallery-overlay"><span>Chunky Cutie Cookie</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="White Chocolate Cranberry">
+                    <div class="gallery-img has-photo"><img src="https://airmenusimages.blr1.cdn.digitaloceanspaces.com/item/item_1202341_1771336538599_c66c86da_6202_4cff_966f_38349f2cbe8c.jpeg" alt="White Chocolate Cranberry" loading="lazy"></div>
+                    <div class="gallery-overlay"><span>White Chocolate Cranberry</span></div>
+                </div>
+                <div class="gallery-item gallery-item-wide animate-on-scroll" data-caption="The Sōjiga Kitchen">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#FFF8F0,#F4D9D0,#C4A35A,#3C1518)"></div>
+                    <div class="gallery-overlay"><span>The Sōjiga Kitchen</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Cardamom Rose Rolls">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#E8B8A0,#C4856A,#F0C8B0)"></div>
+                    <div class="gallery-overlay"><span>Cardamom Rose Rolls</span></div>
+                </div>
+                <div class="gallery-item gallery-item-tall animate-on-scroll" data-caption="Layered Celebration Cake">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#F5D0C5,#C84B31,#F4D9D0)"></div>
+                    <div class="gallery-overlay"><span>Layered Celebration Cake</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Artisan Bread Selection">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#C4A882,#7A5C3E,#D4B898)"></div>
+                    <div class="gallery-overlay"><span>Artisan Bread Selection</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Dark Chocolate Brownies">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#3C1518,#1A0A0C,#5C2A2E,#8B4538)"></div>
+                    <div class="gallery-overlay"><span>Dark Chocolate Brownies</span></div>
+                </div>
+                <div class="gallery-item gallery-item-wide animate-on-scroll" data-caption="Weekend Brunch Spread">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#F0D8A0,#C4A35A,#E8C8A0,#D4A870)"></div>
+                    <div class="gallery-overlay"><span>Weekend Brunch Spread</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Mawa Cake Slices">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#D4A35A,#A67B3D,#E8C078)"></div>
+                    <div class="gallery-overlay"><span>Mawa Cake Slices</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Fresh from the Oven">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#E8C07A,#A67C52,#D4B088)"></div>
+                    <div class="gallery-overlay"><span>Fresh from the Oven</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-caption="Seasonal Fruit Tarts">
+                    <div class="gallery-img" style="background:linear-gradient(135deg,#E07050,#C84B31,#F09080,#D46050)"></div>
+                    <div class="gallery-overlay"><span>Seasonal Fruit Tarts</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
+        <button class="lightbox-next" aria-label="Next">&#8250;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-img" id="lightboxImg"></div>
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Get in Touch</span>
+                <h2 class="section-title animate-on-scroll">Contact Us</h2>
+                <p class="section-desc animate-on-scroll">Have a question, want to place a custom order, or just want to say hello? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-wrap animate-on-scroll">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-whatsapp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Chat on WhatsApp
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">&#128205;</div>
+                        <h3>Visit Us</h3>
+                        <p>Bangalore, Karnataka<br>India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">&#128336;</div>
+                        <h3>Hours</h3>
+                        <p>Tue &ndash; Sun: 8:00 AM &ndash; 7:00 PM<br>Monday: Closed</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon">&#128241;</div>
+                        <h3>WhatsApp</h3>
+                        <p>+91 XXXXX XXXXX<br><a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-direct">Message us directly &rarr;</a></p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/sojiga_bakehouse/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="section payment-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Easy &amp; Secure</span>
+                <h2 class="section-title animate-on-scroll">Payment Options</h2>
+                <p class="section-desc animate-on-scroll">We accept multiple payment methods for your convenience.</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-methods animate-on-scroll">
+                    <h3>Accepted Payment Methods</h3>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <div class="payment-icon upi-icon">UPI</div>
+                            <span>UPI Payment</span>
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-icon gpay-icon">G Pay</div>
+                            <span>Google Pay</span>
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-icon phonepe-icon">PhonePe</div>
+                            <span>PhonePe</span>
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-icon bank-icon">&#127974;</div>
+                            <span>Bank Transfer</span>
+                        </div>
+                        <div class="payment-option">
+                            <div class="payment-icon cod-icon">&#128181;</div>
+                            <span>Cash on Delivery</span>
+                        </div>
+                    </div>
+                    <div class="upi-qr animate-on-scroll">
+                        <div class="qr-placeholder">
+                            <div class="qr-inner">
+                                <span>QR Code</span>
+                                <p>Scan to pay via UPI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-summary animate-on-scroll">
+                    <h3>Your Order</h3>
+                    <div class="order-items" id="orderItems">
+                        <div class="order-empty">
+                            <p>Your order is empty</p>
+                            <a href="#menu" class="btn btn-secondary btn-sm">Browse Menu</a>
+                        </div>
+                    </div>
+                    <div class="order-total" id="orderTotal" style="display:none">
+                        <div class="order-total-row"><span>Subtotal</span><span id="subtotal">&#8377;0</span></div>
+                        <div class="order-total-row"><span>Delivery</span><span>&#8377;50</span></div>
+                        <div class="order-total-row total"><span>Total</span><span id="totalAmount">&#8377;0</span></div>
+                        <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Pay via WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="sojiga-logo.png" alt="Sōjiga Bakehouse" class="footer-logo-img">
+                    <p class="footer-tagline">Where Every Bite is a Wonder</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About Us</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Hours</h4>
+                    <p>Tuesday &ndash; Sunday</p>
+                    <p>8:00 AM &ndash; 7:00 PM</p>
+                    <p class="closed">Monday: Closed</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.instagram.com/sojiga_bakehouse/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sōjiga Bakehouse. All rights reserved.</p>
+                <p>Crafted with love in Bangalore</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
